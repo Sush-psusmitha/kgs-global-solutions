@@ -1,0 +1,956 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" href="../../images/favicon.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utility Workflow Management Case Study | KGS</title>
+  <meta name="description" content="This case study explains how KGS streamlined 500,000+ monthly utility service transactions, improved processing accuracy, and accelerated operational workflows." />
+  <link rel="canonical" href="https://www.kotnaniglobal.com/case-studies/business-process-automation/utility-process-operations.html" />  <meta name="robots" content="noindex, nofollow" />
+<!-- Preload critical assets -->
+  <link rel="preload" as="font" type="font/woff2" href="../../fonts/InterTight-Bold.woff2" crossorigin />
+  <link rel="preload" as="image" href="../../images/industires/ind-04-energy-utilities.webp" fetchpriority="high" />
+  <!-- Font Awesome — only used subsets (solid + brands) -->
+  <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/solid.min.css" />
+  <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/brands.min.css" />
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href="../../node_modules/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="../../node_modules/slick-carousel/slick/slick-theme.css">
+  <link rel="stylesheet" href="../../css/style.css" />
+
+
+  <!-- Start -->
+  <meta itemprop="image" content="https://www.kotnaniglobal.com/images/KGS-logo-white.svg">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kotnani Global Solutions">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://www.kotnaniglobal.com/case-studies/business-process-automation/utility-process-operations.html">
+  <meta property="og:title" content="Utility Workflow Management Case Study | KGS">
+  <meta property="og:description" content="This case study explains how KGS streamlined 500,000+ monthly utility service transactions, improved processing accuracy, and accelerated operational workflows.">
+  <meta property="og:image" content="https://www.kotnaniglobal.com/images/industires/ind-04-energy-utilities.webp">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="kotnaniglobal.com">
+  <meta property="twitter:url" content="https://www.kotnaniglobal.com/case-studies/business-process-automation/utility-process-operations.html">
+  <meta name="twitter:title" content="Utility Workflow Management Case Study | KGS">
+  <meta name="twitter:description" content="This case study explains how KGS streamlined 500,000+ monthly utility service transactions, improved processing accuracy, and accelerated operational workflows.">
+  <meta name="twitter:image" content="https://www.kotnaniglobal.com/images/industires/ind-04-energy-utilities.webp">
+  <!-- end -->
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar-wrapper" id="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <!-- Logo -->
+      <a href="../../index.html" class="navbar-logo" aria-label="Kotnani Global Solutions Home">
+        <img src="../../images/KGS-logo-white.svg" alt="Kotnani Global Solutions" class="logo-img logo-light" />
+        <img src="../../images/kgs-logo-black.svg" alt="Kotnani Global Solutions" class="logo-img logo-dark" />
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="navLinks" role="menubar">
+
+        <!-- Our Expertise — mega dropdown -->
+        <li class="nav-item has-dropdown" id="expertiseItem" role="none">
+          <button class="nav-link nav-link-btn" aria-haspopup="true" aria-expanded="false" id="expertiseBtn" role="menuitem">
+            Our Expertise
+            <svg class="chevron" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <!-- MEGA DROPDOWN — full-viewport-width: Services + Industries, each split into 2 columns of 5 -->
+          <div class="mega-dropdown" id="expertiseDropdown" role="menu" aria-labelledby="expertiseBtn">
+            <div class="mega-inner container">
+
+              <!-- Services -->
+              <div class="mega-group">
+                <h4 class="mega-col-title">Services</h4>
+                <p class="mega-col-desc">End-to-end delivery across technology, data &amp; business operations.</p>
+                <div class="mega-col-split">
+                  <ul class="mega-col-list">
+                    <li><a href="../../services/generative-ai.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-brain" aria-hidden="true"></i></span><span class="mega-item-text">Gen AI Services</span></span></a></li>
+                    <li><a href="../../services/data-management.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></span><span class="mega-item-text">Data Management</span></span></a></li>
+                    <li><a href="../../services/logistics-bpo.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-truck-fast" aria-hidden="true"></i></span><span class="mega-item-text">Logistics</span></span></a></li>
+                    <li><a href="../../services/data-science-business-intelligence.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-chart-pie" aria-hidden="true"></i></span><span class="mega-item-text">Data Science &amp; BI</span></span></a></li>
+                    <li><a href="../../services/legal-process-outsourcing.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></span><span class="mega-item-text">LPO</span></span></a></li>
+                    <li><a href="../../services/cybersecurity.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span><span class="mega-item-text">Cybersecurity</span></span></a></li>
+                    <li><a href="../../services/software-development.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span><span class="mega-item-text">Software Development</span></span></a></li>
+                  </ul>
+                  <ul class="mega-col-list">
+                    <li><a href="../../services/esg-consulting.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-leaf" aria-hidden="true"></i></span><span class="mega-item-text">ESG</span></span></a></li>
+                    <li><a href="../../services/business-process-automation.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></span><span class="mega-item-text">Automation</span></span></a></li>
+                    <li><a href="../../services/finance-accounting.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-file-invoice-dollar" aria-hidden="true"></i></span><span class="mega-item-text">Finance &amp; Accounting</span></span></a></li>
+                    <li><a href="../../services/data-engineering.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></span><span class="mega-item-text">Data Engineering</span></span></a></li>
+                    <li><a href="../../services/healthcare-bpo.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></span><span class="mega-item-text">Healthcare</span></span></a></li>
+                    <li><a href="../../services/insurance-bpo.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-umbrella" aria-hidden="true"></i></span><span class="mega-item-text">Insurance</span></span></a></li>
+                    <li><a href="../../services/customs-brokerage.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-boxes-packing" aria-hidden="true"></i></span><span class="mega-item-text">Custom Brokerage</span></span></a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Industries -->
+              <div class="mega-group">
+                <h4 class="mega-col-title">Industries</h4>
+                <p class="mega-col-desc">Deep domain expertise across the sectors that depend on us.</p>
+                <div class="mega-col-split">
+                  <ul class="mega-col-list">
+                    <li><a href="../../industries/banking-finance.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-building-columns" aria-hidden="true"></i></span><span class="mega-item-text">Banking &amp; Finance</span></span></a></li>
+                    <li><a href="../../industries/customs-brokerage.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-ship" aria-hidden="true"></i></span><span class="mega-item-text">Custom Brokerage</span></span></a></li>
+                    <li><a href="../../industries/energy-utilities.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></span><span class="mega-item-text">Energy &amp; Utilities</span></span></a></li>
+                    <li><a href="../../industries/logistics.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-truck" aria-hidden="true"></i></span><span class="mega-item-text">Logistics</span></span></a></li>
+                    <li><a href="../../industries/mortgage.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-house-chimney" aria-hidden="true"></i></span><span class="mega-item-text">Mortgage</span></span></a></li>
+                  </ul>
+                  <ul class="mega-col-list">
+                    <li><a href="../../industries/manufacturing.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-industry" aria-hidden="true"></i></span><span class="mega-item-text">Manufacturing</span></span></a></li>
+                    <li><a href="../../industries/ecommerce.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></span><span class="mega-item-text">E-commerce</span></span></a></li>
+                    <li><a href="../../industries/real-estate.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-city" aria-hidden="true"></i></span><span class="mega-item-text">Real Estate</span></span></a></li>
+                    <li><a href="../../industries/insurance.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-shield-heart" aria-hidden="true"></i></span><span class="mega-item-text">Insurance</span></span></a></li>
+                    <li><a href="../../industries/retail.html" role="menuitem"><span class="mega-item-label"><span class="mega-item-icon"><i class="fa-solid fa-store" aria-hidden="true"></i></span><span class="mega-item-text">Retail</span></span></a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Featured -->
+              <a href="../../services/generative-ai.html" class="mega-featured company-promo" role="menuitem">
+                <img src="../../images/banner/generative-ai.webp" alt="" class="company-promo-img" />
+                <div class="company-promo-content">
+                  <h4 class="company-promo-title">AI-Led Transformation</h4>
+                  <p class="company-promo-desc">See how Generative AI and automation help enterprises move faster.</p>
+                  <span class="btn-arrow company-promo-btn">Explore Gen AI</span>
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+        </li>
+
+        <!-- Capability — same mega-menu style as Our Company, 2x2 grid + image promo -->
+        <li class="nav-item has-dropdown" id="capabilityItem" role="none">
+          <button class="nav-link nav-link-btn" aria-haspopup="true" aria-expanded="false" id="capabilityBtn" role="menuitem">
+            Platforms
+            <svg class="chevron" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <div class="simple-dropdown company-dropdown" id="capabilityDropdown" role="menu" aria-labelledby="capabilityBtn">
+            <div class="company-dropdown-inner platforms-dropdown-inner container">
+              <span class="mega-col-title company-dropdown-label">Platforms</span>
+              <p class="company-dropdown-desc">Proprietary software products built to streamline scheduling, publishing, and digital operations.</p>
+              <div class="company-grid capability-grid">
+                <a href="#" class="grid-item" role="menuitem">
+                  <span class="grid-item-icon"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i></span>
+                  <span class="grid-item-text">
+                    <span class="grid-item-title">MapMyClasses</span>
+                  <span class="grid-item-sub">Smart class scheduling &amp; management</span>
+                  </span>
+                </a>
+                <a href="#" class="grid-item" role="menuitem">
+                  <span class="grid-item-icon"><i class="fa-solid fa-book-open" aria-hidden="true"></i></span>
+                  <span class="grid-item-text">
+                    <span class="grid-item-title">MapLibrarySuite</span>
+                  <span class="grid-item-sub">Digital library management system</span>
+                  </span>
+                </a>
+                
+                <a href="#" class="grid-item" role="menuitem">
+                  <span class="grid-item-icon"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></span>
+                  <span class="grid-item-text">
+                    <span class="grid-item-title">PublishGridIQ</span>
+                  <span class="grid-item-sub">End-to-end publishing workflow</span>
+                  </span>
+                </a>
+                <a href="#" class="grid-item" role="menuitem">
+                  <span class="grid-item-icon"><i class="fa-solid fa-cubes" aria-hidden="true"></i></span>
+                  <span class="grid-item-text">
+                    <span class="grid-item-title">ThePro3DStudio</span>
+                  <span class="grid-item-sub">3D visualisation &amp; rendering studio</span>
+                  </span>
+                </a>
+              </div>
+
+              <!-- Partners -->
+              <div class="mega-group partners-group">
+                <h4 class="mega-col-title">Cloud Expertise</h4>
+                <ul class="partners-list">
+                  <li><a href="#" role="menuitem"><span class="mega-item-text">AWS</span><i class="fa-solid fa-chevron-right partners-chevron" aria-hidden="true"></i></a></li>
+                  <li><a href="#" role="menuitem"><span class="mega-item-text">Google Cloud</span><i class="fa-solid fa-chevron-right partners-chevron" aria-hidden="true"></i></a></li>
+                  <li><a href="#" role="menuitem"><span class="mega-item-text">Microsoft</span><i class="fa-solid fa-chevron-right partners-chevron" aria-hidden="true"></i></a></li>
+                  <li><a href="#" role="menuitem"><span class="mega-item-text">ServiceNow</span><i class="fa-solid fa-chevron-right partners-chevron" aria-hidden="true"></i></a></li>
+                  <li><a href="#" role="menuitem"><span class="mega-item-text">More partners</span><i class="fa-solid fa-chevron-right partners-chevron" aria-hidden="true"></i></a></li>
+                </ul>
+                <a href="#" class="partners-all-link" role="menuitem">All Partnerships</a>
+              </div>
+
+              <a href="#" class="company-promo" role="menuitem">
+                <img src="../../images/blog/ai-blog-title-01.webp" alt="" class="company-promo-img" />
+                <div class="company-promo-content">
+                  <h4 class="company-promo-title">Built for What's Next</h4>
+                  <p class="company-promo-desc">Explore the product suite powering smarter, connected experiences.</p>
+                  <span class="btn-arrow company-promo-btn">Explore products</span>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </li>
+
+        <!-- Our Company — simple dropdown -->
+        <li class="nav-item has-dropdown" id="companyItem" role="none">
+          <button class="nav-link nav-link-btn" aria-haspopup="true" aria-expanded="false" id="companyBtn" role="menuitem">
+            Our Company
+            <svg class="chevron" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <!-- Company dropdown — full-viewport-width: 3x2 heading+text grid + image promo card -->
+          <div class="simple-dropdown company-dropdown" id="companyDropdown" role="menu" aria-labelledby="companyBtn">
+            <div class="company-dropdown-inner container">
+              <span class="mega-col-title company-dropdown-label">Who We Are</span>
+              <p class="company-dropdown-desc">The people, purpose, and milestones behind Kotnani Global Solutions.</p>
+              <div class="company-grid">
+                <a href="../../about.html" class="grid-item" role="menuitem">
+                  <span class="grid-item-icon"><i class="fa-solid fa-building" aria-hidden="true"></i></span>
+                  <span class="grid-item-text">
+                    <span class="grid-item-title">About Us</span>
+                  <span class="grid-item-sub">Mission, vision &amp; values</span>
+                  </span>
+                </a>
+                <a href="../../management-team.html" class="grid-item" role="menuitem">
+                  <span class="grid-item-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></span>
+                  <span class="grid-item-text">
+                    <span class="grid-item-title">Leadership</span>
+                  <span class="grid-item-sub">Meet our leadership team</span>
+                  </span>
+                </a>
+                <a href="../../careers.html" class="grid-item" role="menuitem">
+                  <span class="grid-item-icon"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span>
+                  <span class="grid-item-text">
+                    <span class="grid-item-title">Careers</span>
+                  <span class="grid-item-sub">Explore open roles</span>
+                  </span>
+                </a>
+                <a href="../../certifications.html" class="grid-item" role="menuitem">
+                  <span class="grid-item-icon"><i class="fa-solid fa-trophy" aria-hidden="true"></i></span>
+                  <span class="grid-item-text">
+                    <span class="grid-item-title">Certifications</span>
+                  <span class="grid-item-sub">Certifications &amp; recognition</span>
+                  </span>
+                </a>
+                <a href="../../locations.html" class="grid-item" role="menuitem">
+                  <span class="grid-item-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+                  <span class="grid-item-text">
+                    <span class="grid-item-title">Locations</span>
+                  <span class="grid-item-sub">Where we operate globally</span>
+                  </span>
+                </a>
+                <a href="../../corporate-social-responsibility.html" class="grid-item" role="menuitem">
+                  <span class="grid-item-icon"><i class="fa-solid fa-leaf" aria-hidden="true"></i></span>
+                  <span class="grid-item-text">
+                    <span class="grid-item-title">CSR Initiatives</span>
+                  <span class="grid-item-sub">Social &amp; environmental impact</span>
+                  </span>
+                </a>
+              </div>
+
+              <a href="../../about.html" class="company-promo" role="menuitem">
+               <img src="../../images/collabrative-environment.png" alt="" class="company-promo-img" />
+                <div class="company-promo-content">
+                  <h4 class="company-promo-title">Who We Are</h4>
+                  <p class="company-promo-desc">Discover the mission, values, and people driving KGS forward.</p>
+                  <span class="btn-arrow company-promo-btn">Read more about us</span>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </li>
+
+        <!-- Resources — mega menu, same visual language as Our Company / Platforms -->
+        <li class="nav-item has-dropdown" id="insightsItem" role="none">
+          <button class="nav-link nav-link-btn" aria-haspopup="true" aria-expanded="false" id="insightsBtn" role="menuitem">
+            Resources
+            <svg class="chevron" width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <div class="simple-dropdown company-dropdown" id="insightsDropdown" role="menu" aria-labelledby="insightsBtn">
+            <div class="company-dropdown-inner container">
+              <span class="mega-col-title company-dropdown-label">Resources</span>
+              <p class="company-dropdown-desc">Insights, proof points, and updates from across the business.</p>
+              <div class="company-grid resources-grid">
+                <a href="../../insights.html" class="grid-item" role="menuitem">
+                  <span class="grid-item-icon"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></span>
+                  <span class="grid-item-text">
+                    <span class="grid-item-title">Insights</span>
+                  <span class="grid-item-sub">Articles &amp; thought leadership</span>
+                  </span>
+                </a>
+                <a href="../../case-studies.html" class="grid-item" role="menuitem">
+                  <span class="grid-item-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></span>
+                  <span class="grid-item-text">
+                    <span class="grid-item-title">Case Studies</span>
+                  <span class="grid-item-sub">Real-world results</span>
+                  </span>
+                </a>
+                <a href="#" class="grid-item" role="menuitem">
+                  <span class="grid-item-icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></span>
+                  <span class="grid-item-text">
+                    <span class="grid-item-title">Whitepapers</span>
+                  <span class="grid-item-sub">Research &amp; reports</span>
+                  </span>
+                </a>
+                <a href="../../news-and-events.html" class="grid-item" role="menuitem">
+                  <span class="grid-item-icon"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i></span>
+                  <span class="grid-item-text">
+                    <span class="grid-item-title">News &amp; Events</span>
+                  <span class="grid-item-sub">Announcements &amp; happenings</span>
+                  </span>
+                </a>
+                <a href="../../testimonials.html" class="grid-item" role="menuitem">
+                  <span class="grid-item-icon"><i class="fa-solid fa-quote-right" aria-hidden="true"></i></span>
+                  <span class="grid-item-text">
+                    <span class="grid-item-title">Testimonials</span>
+                  <span class="grid-item-sub">What our clients say</span>
+                  </span>
+                </a>
+                <a href="../../customers.html" class="grid-item" role="menuitem">
+                  <span class="grid-item-icon"><i class="fa-solid fa-handshake" aria-hidden="true"></i></span>
+                  <span class="grid-item-text">
+                    <span class="grid-item-title">Customers</span>
+                  <span class="grid-item-sub">Brands that trust KGS</span>
+                  </span>
+                </a>
+              </div>
+
+              <a href="../../case-studies.html" class="company-promo" role="menuitem">
+                <img src="../../images/banner/case-studies-bg.png" alt="" class="company-promo-img" />
+                <div class="company-promo-content">
+                  <h4 class="company-promo-title">Proof, Not Promises</h4>
+                  <p class="company-promo-desc">See the measurable outcomes we've delivered for enterprises like yours.</p>
+                  <span class="btn-arrow company-promo-btn">Browse case studies</span>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </li>
+
+        <li class="nav-item" role="none">
+          <button class="search-toggle" id="searchToggle" aria-label="Open search" aria-expanded="false" aria-controls="searchPanel">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+              <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </li>
+
+      </ul>
+
+      <!-- Right side: CTA + Hamburger -->
+      <div class="navbar-right">
+        <a href="../../contact.html" class="header-cta btn-arrow">Contact Us</a>
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- ===================== SEARCH PANEL ===================== -->
+  <div class="search-panel" id="searchPanel">
+    <div class="search-panel-inner container">
+      <div class="search-panel-field" id="navSearch">
+        <input type="text" id="searchInput" class="search-panel-input" placeholder="Search insights, services, and experts" autocomplete="off" aria-label="Search KGS website" />
+        <button type="button" class="search-panel-clear" id="searchClear" aria-label="Clear search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 5L19 19M19 5L5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <svg class="search-panel-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+          <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="search-dropdown" id="searchDropdown"></div>
+    </div>
+  </div>
+
+  <!-- ===================== MOBILE MENU OVERLAY ===================== -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile navigation" hidden>
+    <div class="mobile-menu-inner">
+      <div class="mobile-menu-header">
+        <a href="../../index.html" class="navbar-logo mob-logo" aria-label="Kotnani Global Solutions Home">
+          <img src="../../images/kgs-logo-black.svg" alt="Kotnani Global Solutions" class="logo-img logo-dark" />
+          <img src="../../images/KGS-logo-white.svg" alt="Kotnani Global Solutions" class="logo-img logo-light" />
+        </a>
+        <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+          <svg width="20" height="20" viewBox="0 0 22 22" fill="none"><path d="M3 3L19 19M19 3L3 19" stroke="#3C3C3A" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <nav class="mobile-nav">
+        <a href="../../index.html" class="mob-link">Home</a>
+
+        <div class="mob-accordion">
+          <button class="mob-acc-trigger" aria-expanded="false">
+            Our Expertise
+            <svg class="chevron" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="mob-acc-panel">
+            <div class="mob-section-label">SERVICES</div>
+            <a href="../../services/generative-ai.html" class="mob-sub-link">Gen AI Services</a>
+            <a href="../../services/data-management.html" class="mob-sub-link">Data Management</a>
+            <a href="../../services/data-science-business-intelligence.html" class="mob-sub-link">Data Science &amp; BI Services</a>
+            <a href="../../services/legal-process-outsourcing.html" class="mob-sub-link">LPO</a>
+            <a href="../../services/cybersecurity.html" class="mob-sub-link">Cybersecurity</a>
+            <a href="../../services/software-development.html" class="mob-sub-link">Software Development</a>
+            <a href="../../services/esg-consulting.html" class="mob-sub-link">ESG</a>
+            <a href="../../services/business-process-automation.html" class="mob-sub-link">Automation</a>
+            <a href="../../services/finance-accounting.html" class="mob-sub-link">Finance &amp; Accounting</a>
+            <a href="../../services/data-engineering.html" class="mob-sub-link">Data Engineering</a>
+            <div class="mob-section-label" style="margin-top:10px;">INDUSTRIES</div>
+            <a href="../../industries/banking-finance.html" class="mob-sub-link">Banking &amp; Finance</a>
+            <!-- <a href="../../industries/telecommunications.html" class="mob-sub-link">Telecommunications</a> -->
+            <a href="../../industries/customs-brokerage.html" class="mob-sub-link">Custom Brokerage</a>
+            <a href="../../industries/energy-utilities.html" class="mob-sub-link">Energy &amp; Utilities</a>
+            <a href="../../industries/logistics.html" class="mob-sub-link">Logistics</a>
+            <a href="../../industries/mortgage.html" class="mob-sub-link">Mortgage</a>
+            <a href="../../industries/manufacturing.html" class="mob-sub-link">Manufacturing</a>
+            <a href="../../industries/ecommerce.html" class="mob-sub-link">E-commerce</a>
+            <a href="../../industries/real-estate.html" class="mob-sub-link">Real Estate</a>
+            <a href="../../industries/insurance.html" class="mob-sub-link">Insurance</a>
+            <a href="../../industries/retail.html" class="mob-sub-link">Retail</a>
+            <!-- <a href="../../industries/information-technology.html" class="mob-sub-link">Information Technology</a> -->
+            <div class="mob-section-label" style="margin-top:10px;">PRODUCTS</div>
+            <a href="#" class="mob-sub-link">MapMyClasses</a>
+            <a href="#" class="mob-sub-link">MapLibrarySuite</a>
+            <a href="#" class="mob-sub-link">Threedify</a>
+            <a href="#" class="mob-sub-link">PublishGridIQ</a>
+            <a href="https://professional3dservices.com/" class="mob-sub-link" target="_blank" rel="noopener">ThePro3DStudio</a>
+          </div>
+        </div>
+
+        <div class="mob-accordion">
+          <button class="mob-acc-trigger" aria-expanded="false">
+            Our Company
+            <svg class="chevron" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="mob-acc-panel">
+            <a href="../../about.html" class="mob-sub-link">About Us</a>
+            <a href="../../management-team.html" class="mob-sub-link">Leadership</a>
+            <a href="../../careers.html" class="mob-sub-link">Careers</a>
+            <a href="../../certifications.html" class="mob-sub-link">Awards</a>
+            <a href="../../locations.html" class="mob-sub-link">Locations</a>
+            <a href="../../corporate-social-responsibility.html" class="mob-sub-link">CSR Initiatives</a>
+          </div>
+        </div>
+
+        <div class="mob-accordion">
+          <button class="mob-acc-trigger" aria-expanded="false">
+            Resources
+            <svg class="chevron" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="mob-acc-panel">
+            <a href="../../insights.html" class="mob-sub-link">Insights</a>
+            <a href="../../case-studies.html" class="mob-sub-link">Case Studies</a>
+            <a href="#" class="mob-sub-link">Whitepapers</a>
+            <a href="../../news-and-events.html" class="mob-sub-link">News &amp; Events</a>
+            <a href="../../testimonials.html" class="mob-sub-link">Testimonials</a>
+            <a href="../../customers.html" class="mob-sub-link">Customers</a>
+          </div>
+        </div>
+
+        <a href="../../contact.html" class="mob-link">Contact</a>
+        <a href="../../contact.html" class="mob-cta btn-arrow">Start Free Trial</a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+
+
+<!-- ============================================================
+     SHARED GRADIENT WRAP — hero through results share one bg
+============================================================ -->
+<div class="csgrad-wrap">
+
+<!-- ============================================================
+     HERO — tag + title + breadcrumb + image
+============================================================ -->
+<section class="csh-section" aria-labelledby="csh-title">
+  <div class="csh-inner">
+
+    <div class="csh-text">
+      <span class="csh-tag">Business Process Automation</span>
+      <h1 class="csh-title" id="csh-title">A Multi-Region Utility Provider Streamlined 500,000+ Monthly Service Transactions</h1>
+
+      <nav class="csh-breadcrumb" aria-label="Breadcrumb">
+        <a href="../../index.html" class="csh-breadcrumb-link">Home</a>
+        <span class="csh-breadcrumb-sep" aria-hidden="true">&bull;</span>
+        <a href="../../case-studies.html" class="csh-breadcrumb-link">Case Studies</a>
+        <span class="csh-breadcrumb-sep" aria-hidden="true">&bull;</span>
+        <span class="csh-breadcrumb-label">Business Process Automation</span>
+        <span class="csh-breadcrumb-sep" aria-hidden="true">&bull;</span>
+        <span class="csh-breadcrumb-current" aria-current="page">Utility Process Operations</span>
+      </nav>
+    </div>
+
+    <div class="csh-media">
+      <img src="../../images/industires/ind-04-energy-utilities.webp" alt="Utility service operations" class="csh-img" loading="eager">
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT CLIENT  +  CLIENT REQUIREMENT
+============================================================ -->
+<section class="csabt-section" aria-label="About the client and requirements">
+  <div class="csabt-inner">
+
+    <div class="csabt-card">
+      <h2 class="csabt-title">About The Client</h2>
+      <p class="csabt-body">The client is a large utility provider delivering essential services across multiple regions and a diverse residential, commercial, and industrial customer base. Its operations teams managed high volumes of service requests, meter-related activities, field work orders, billing inputs, customer updates, and operational exceptions across multiple systems. As the service network expanded, manual coordination and fragmented workflows made it increasingly difficult to maintain consistent turnaround times. The organisation needed a scalable utility operations model to standardise recurring activities, improve data accuracy, strengthen exception management, and provide clearer visibility across day-to-day service operations.
+</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     KEY STATS
+============================================================ -->
+<section class="csstat-section" aria-label="Key statistics">
+  <div class="csstat-inner">
+
+    <div class="csstat-item">
+      <p class="csstat-num"><span class="csstat-count" data-target="500000">0</span><span class="csstat-symbol">+</span></p>
+      <p class="csstat-label">Service Transactions Supported Monthly</p>
+    </div>
+
+    <div class="csstat-divider" aria-hidden="true"></div>
+
+    <div class="csstat-item">
+      <p class="csstat-num"><span class="csstat-count" data-target="99">0</span><span class="csstat-symbol">%+</span></p>
+      <p class="csstat-label">Processing Accuracy</p>
+    </div>
+
+    <div class="csstat-divider" aria-hidden="true"></div>
+
+    <div class="csstat-item">
+      <p class="csstat-num"><span class="csstat-count" data-target="50">0</span><span class="csstat-symbol">+</span></p>
+      <p class="csstat-label">Utility Workflows Standardised</p>
+    </div>
+
+    <div class="csstat-divider" aria-hidden="true"></div>
+
+    <div class="csstat-item">
+      <p class="csstat-num"><span class="csstat-count" data-target="35">0</span><span class="csstat-symbol">%</span></p>
+      <p class="csstat-label">Faster Processing Cycles</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================================
+     STORY — narrative left (70%) / sticky sidebar image (30%)
+============================================================ -->
+<section class="csbody-section" aria-label="Case study narrative">
+  <div class="csbody-inner">
+
+    <div class="csbody-content">
+
+      <div class="csbody-block">
+        <h2 class="csbody-heading">The Challenge</h2>
+        <p class="csbody-text">Utility operations involved thousands of interconnected activities across customer service, metering, billing, field operations, asset management, and service delivery.</p>
+
+        <p class="csbody-text">
+          Many workflows depended on information moving between customer information systems, meter platforms, work management applications, billing systems, and field service tools. Inconsistent data or delayed system updates could affect downstream processes.
+        </p>
+        <p class="csbody-text">
+        High transaction volumes created additional pressure. Service requests, meter updates, work orders, account changes, and operational records required validation and processing within defined timelines.
+        </p>
+        <p class="csbody-text">
+        Exceptions were particularly resource-intensive. Missing information, unmatched meter records, incomplete work orders, billing discrepancies, and inconsistent customer data often required teams to investigate cases manually.
+        </p>
+        <p class="csbody-text">
+        Field and back-office coordination added another layer of complexity. Information generated through field activities needed to reach operational and customer-facing systems accurately so subsequent processes could continue.</p>
+        <p class="csbody-text">
+        The organisation needed a structured operating model that could keep routine utility activities moving while directing exceptions to the appropriate operational specialists.
+        </p>
+      </div>
+
+      <div class="csbody-block">
+        <h2 class="csbody-heading">What Did KGS Do</h2>
+        <p class="csbody-text">KGS began by assessing the client's utility operations, transaction volumes, system landscape, service workflows, data dependencies, control requirements, and recurring operational exceptions.</p>
+        <p class="csbody-text">More than 50 priority utility workflows were mapped and standardised to support over 500,000 monthly service and operational transactions.</p>
+        <p class="csbody-text">KGS supported recurring activities including service request processing, meter data validation, work order administration, customer record updates, billing data preparation, operational reconciliation, and exception management.</p>
+        <p class="csbody-text">Defined validation checkpoints helped identify incomplete records, inconsistent meter information, duplicate transactions, missing work order details, and other data issues before they affected downstream processes. Routine activities were separated from exceptions requiring investigation, with cases categorised and routed to the appropriate customer, billing, field service, or operational teams with relevant supporting information.</p>
+        <p class="csbody-text">Operational dashboards provided clearer visibility into transaction volumes, work status, outstanding requests, exceptions, ageing items, and processing performance across the utility network.
+</p>
+      </div>
+
+    </div>
+
+    <div class="csbody-media">
+      <img src="../../images/case-studies-sidebar.png" alt="KGS specialists reviewing utility service operations workflows" class="csbody-img" loading="lazy">
+    </div>
+
+  </div>
+
+  <!-- Full width: The Results -->
+  <div class="csres-inner">
+    <h2 class="csres-title">The Results</h2>
+
+    <div class="csres-grid">
+
+     
+
+       <ul class="csres-list">
+        <li class="csres-item">
+          <img src="../../images/check.png" alt="" class="csres-check" aria-hidden="true">
+          <span>Supported <b>500,000+ utility service transactions</b> each month</span>
+        </li>
+        <li class="csres-item">
+          <img src="../../images/check.png" alt="" class="csres-check" aria-hidden="true">
+          <span>Maintained <b>99%+ processing accuracy</b> across targeted workflows</span>
+        </li>
+        <li class="csres-item">
+          <img src="../../images/check.png" alt="" class="csres-check" aria-hidden="true">
+          <span>Standardised <b>50+ recurring utility operations workflows</b></span>
+        </li>
+      </ul>
+
+      <div class="csres-divider" aria-hidden="true"></div>
+
+      <ul class="csres-list">
+        <li class="csres-item">
+          <img src="../../images/check.png" alt="" class="csres-check" aria-hidden="true">
+          <span>Accelerated targeted processing cycles by <b>35%</b></span>
+        </li>
+        <li class="csres-item">
+          <img src="../../images/check.png" alt="" class="csres-check" aria-hidden="true">
+          <span>Improved coordination between back-office and field operations</span>
+        </li>
+        <li class="csres-item">
+          <img src="../../images/check.png" alt="" class="csres-check" aria-hidden="true">
+          <span>Strengthened visibility into service requests, work orders, exceptions, and outstanding activities</span>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+</div><!-- /.csgrad-wrap -->
+
+<!-- ============================================================
+     TECH STACK + CTA  +  CLIENT TESTIMONIAL
+============================================================ -->
+<section class="cstech-section" aria-label="Technology partners and client testimonial">
+  <div class="cstech-inner">
+
+    <div class="cstech-row">
+
+      <div class="cstech-box cstech-box--tech">
+        <h2 class="cstech-title">The Technology That We Use to Support Our Client</h2>
+        <div class="cstech-logos cstech-logos--top">
+          <img src="../../images/logos/microsoft.png" alt="Microsoft" class="cstech-logo" loading="lazy">
+          <img src="../../images/logos/servicenow-logo 1.png" alt="ServiceNow" class="cstech-logo" loading="lazy">
+          <img src="../../images/logos/aws.png" alt="AWS" class="cstech-logo" loading="lazy">
+        </div>
+        <div class="cstech-logos cstech-logos--bottom">
+          <img src="../../images/logos/sap.png" alt="SAP" class="cstech-logo" loading="lazy">
+          <img src="../../images/logos/oracle-scm-cloud.png" alt="Oracle Cloud Platform" class="cstech-logo" loading="lazy">
+          <img src="../../images/logos/power-bi.png" alt="Microsoft Power BI" class="cstech-logo" loading="lazy">
+        </div>
+      </div>
+
+      <div class="cstech-box cstech-box--cta">
+        <h2 class="cstech-cta-title">Ready to Make Utility Operations More Connected and Efficient?</h2>
+        <a href="../../contact.html" class="cstech-cta-btn btn-arrow">Talk to an Energy & Utilities Expert</a>
+        <img src="../../images/arrow-down.png" alt="" class="cstech-cta-deco" aria-hidden="true">
+      </div>
+
+    </div>
+
+    <div class="cstst-box">
+      <h2 class="cstst-title">What did the client say?</h2>
+
+      <div class="cstst-stars" aria-hidden="true">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <p class="cstst-quote">&ldquo;KGS helped us create a much more structured approach to utility operations across teams and systems. Routine activities now move through consistent workflows, operational exceptions are identified earlier, and our teams have clearer visibility into outstanding service and field activities. This has helped us improve efficiency while supporting a growing service network.&rdquo;</p>
+
+      <p class="cstst-author">VP, Utility Operations<span> Multi-Region Utility Provider
+</span></p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===================== CASE STUDIES ===================== -->
+<section class="cs-section" aria-labelledby="csHeading">
+  <div class="cs-top container">
+    <h2 id="csHeading" class="cs-heading">Explore More Case Studies</h2>
+
+    <a href="../../case-studies.html" class="cs-top-btn btn-arrow">Visit Case Studies</a>
+  </div>
+
+  <div class="cs-slider-container container">
+    <div class="cs-slider" role="list">
+      <div class="cs-slide-card" data-index="0" data-service="bank-loan-processing" role="listitem">
+        <div class="cs-slide-card-img-wrap">
+          <img src="../../images/blog/finance-blog-title-03.webp" alt="Bank loan origination and processing" class="cs-slide-card-img" loading="lazy">
+        </div>
+        <div class="cs-slide-card-content">
+          <span class="cs-slide-card-tag">Success story</span>
+          <h3 class="cs-slide-card-title">A Financial Institution Streamlined 25,000+ Monthly Loan Applications</h3>
+          <a href="../business-process-automation/bank-loan-processing.html" class="cs-slide-card-btn btn-arrow btn-arrow--outline-primary">Read more</a>
+        </div>
+      </div>
+
+      <div class="cs-slide-card" data-index="1" data-service="banking-operations-management" role="listitem">
+        <div class="cs-slide-card-img-wrap">
+          <img src="../../images/blog/finance-blog-title-06.webp" alt="Banking operations management" class="cs-slide-card-img" loading="lazy">
+        </div>
+        <div class="cs-slide-card-content">
+          <span class="cs-slide-card-tag">Success story</span>
+          <h3 class="cs-slide-card-title">A Multi-Entity Bank Streamlined 1M+ Monthly Transactions to Improve Processing Accuracy</h3>
+          <a href="../business-process-automation/banking-operations-management.html" class="cs-slide-card-btn btn-arrow btn-arrow--outline-primary">Read more</a>
+        </div>
+      </div>
+
+      <div class="cs-slide-card" data-index="2" data-service="banking-payment-operations" role="listitem">
+        <div class="cs-slide-card-img-wrap">
+          <img src="../../images/blog/finance-blog-title-04.webp" alt="Banking payment operations" class="cs-slide-card-img" loading="lazy">
+        </div>
+        <div class="cs-slide-card-content">
+          <span class="cs-slide-card-tag">Success story</span>
+          <h3 class="cs-slide-card-title">A Global Bank Streamlined 2M+ Monthly Payment Transactions</h3>
+          <a href="../business-process-automation/banking-payment-operations.html" class="cs-slide-card-btn btn-arrow btn-arrow--outline-primary">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cs-services-container container">
+    <div class="cs-slider-nav">
+      <button type="button" class="cs-nav-btn cs-nav-btn--prev" aria-label="Previous success story">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="cs-nav-btn cs-nav-btn--next" aria-label="Next success story">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===============
+     SECTION 2 — FOOTER
+================== -->
+
+<footer class="site-footer" role="contentinfo" aria-label="Site footer">
+  <div class="footer-inner">
+
+    <!-- ── Main grid ── -->
+    <div class="footer-grid">
+
+      <!-- Col 1: Brand + contact -->
+      <div class="footer-col footer-col--brand">
+
+        <!-- Logo -->
+        <a href="../../index.html" class="footer-logo" aria-label="Kotnani Global Solutions home">
+          <img src="../../images/KGS-logo-white.svg" alt="Kotnani Global Solutions" width="160" height="48" loading="lazy">
+        </a>
+
+        <p class="footer-address">34/1, Rashtriya Vidyalaya Rd, Basavanagudi, Bengaluru, Karnataka 560004</p>
+
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></span>
+          <a href="tel:+918022450187" class="footer-contact-value">+91 8022450187</a>
+        </div>
+
+        <div class="footer-contact-item">
+          <span class="footer-contact-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
+          <a href="mailto:collaboratewith@kotnaniglobal.com" class="footer-contact-value">Write to us <i class="fa-solid fa-arrow-up-right-from-square footer-contact-ext" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="footer-socials">
+          <p class="footer-socials-label">Follow us on</p>
+          <div class="footer-social-icons">
+
+            <a href="#" class="footer-social" aria-label="Facebook" target="_blank" rel="noopener">
+              <img src="../../images/logos/facebook.png" alt="" loading="lazy">
+            </a>
+
+            <a href="#" class="footer-social" aria-label="X / Twitter" target="_blank" rel="noopener">
+              <img src="../../images/logos/twiter.png" alt="" loading="lazy">
+            </a>
+
+            <a href="#" class="footer-social" aria-label="Instagram" target="_blank" rel="noopener">
+              <img src="../../images/logos/instagram.png" alt="" loading="lazy">
+            </a>
+
+            <a href="#" class="footer-social" aria-label="LinkedIn" target="_blank" rel="noopener">
+              <img src="../../images/logos/linkdin.png" alt="" loading="lazy">
+            </a>
+
+            <a href="#" class="footer-social" aria-label="YouTube" target="_blank" rel="noopener">
+              <img src="../../images/logos/youtube.png" alt="" loading="lazy">
+            </a>
+
+            <a href="#" class="footer-social" aria-label="WhatsApp" target="_blank" rel="noopener">
+              <img src="../../images/logos/whatsapp.png" alt="" loading="lazy">
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <nav class="footer-col" aria-label="Quick links">
+        <h3 class="footer-col-title">Quick Links</h3>
+        <div class="footer-links-split">
+          <ul class="footer-links">
+            <li><a href="../../sitemap.html" class="footer-link">Sitemap</a></li>
+            <li><a href="../../testimonials.html" class="footer-link">Testimonials</a></li>
+            <li><a href="../../case-studies.html" class="footer-link">Case Studies</a></li>
+            <li><a href="../../our-work-culture.html" class="footer-link">Values</a></li>
+            <li><a href="../../customers.html" class="footer-link">Customers</a></li>
+          </ul>
+          <ul class="footer-links">
+            <li><a href="../../about.html" class="footer-link">About Us</a></li>
+            <li><a href="../../management-team.html" class="footer-link">Leadership</a></li>
+            <li><a href="../../careers.html" class="footer-link">Careers</a></li>
+            <li><a href="../../locations.html" class="footer-link">Locations</a></li>
+            <li><a href="../../contact.html" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Col 3: Popular Services -->
+      <nav class="footer-col" aria-label="Popular services">
+        <h3 class="footer-col-title">Popular Services</h3>
+        <ul class="footer-links">
+          <li><a href="../../services/generative-ai.html" class="footer-link">Gen AI Services</a></li>
+          <li><a href="../../services/data-management.html" class="footer-link">Data Management</a></li>
+          <li><a href="../../services/finance-accounting.html" class="footer-link">Finance &amp; Accounting</a></li>
+          <li><a href="../../services/healthcare-bpo.html" class="footer-link">Healthcare BPO</a></li>
+          <li><a href="../../services/data-engineering.html" class="footer-link">Data Engineering</a></li>
+          <li><a href="../../services/software-development.html" class="footer-link">Software Development</a></li>
+          <li><a href="../../services/cybersecurity.html" class="footer-link">Cybersecurity</a></li>
+        </ul>
+      </nav>
+
+      <!-- Col 5: ISO badges + Ask AI -->
+      <div class="footer-col footer-col--meta">
+        <div class="footer-iso-badges">
+          <img src="../../images/footer-iso2.png" alt="ISO 27001:2022 Certified — Information Security Management" class="footer-iso-badge" loading="lazy">
+          <img src="../../images/footer-iso.png" alt="ISO 9001:2015 Certified — Quality Management System" class="footer-iso-badge" loading="lazy">
+        </div>
+
+        <p class="footer-ai-label">Ask AI about KGS</p>
+        <div class="footer-ai-logos">
+          <a href="#" class="footer-ai-logo" aria-label="Ask ChatGPT about KGS" target="_blank" rel="noopener">
+            <img src="../../images/logos/chatgpt.png" alt="" loading="lazy">
+          </a>
+          <a href="#" class="footer-ai-logo" aria-label="Ask Claude about KGS" target="_blank" rel="noopener">
+            <img src="../../images/logos/claude.png" alt="" loading="lazy">
+          </a>
+          <a href="#" class="footer-ai-logo" aria-label="Ask Gemini about KGS" target="_blank" rel="noopener">
+            <img src="../../images/logos/gemini.png" alt="" loading="lazy">
+          </a>
+          <a href="#" class="footer-ai-logo" aria-label="Ask Grok about KGS" target="_blank" rel="noopener">
+            <img src="../../images/logos/grok-ai.png" alt="" loading="lazy">
+          </a>
+          <a href="#" class="footer-ai-logo" aria-label="Ask Perplexity about KGS" target="_blank" rel="noopener">
+            <img src="../../images/logos/perplexity.png" alt="" loading="lazy">
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /.footer-grid -->
+
+    <!-- ── Bottom bar ── -->
+    <div class="footer-bottom" role="contentinfo">
+      <p class="footer-copy">
+        <strong>&copy;2026 Kotnani Global Solutions. All Rights Reserved.</strong> The information on this website cannot be commercially used without the prior consent of Kotnani Global Solutions. Third-party logos displayed on the website are not owned by us, and are displayed only for representation purpose. The ownership and copyright of Logos belong to their respective organizations.
+      </p>
+    </div>
+  </div><!-- /.footer-inner -->
+</footer>
+</main>
+
+
+
+<script src="../../js/search-index.js"></script>
+  <script src="../../js/search.js" data-root="../../"></script>
+  <script src="../../js/script.js"></script>
+
+<!-- Stats counter animation -->
+<script>
+(function () {
+  var counts = document.querySelectorAll('.csstat-count');
+  if (!counts.length) return;
+
+  function animateCount(el) {
+    var raw = el.getAttribute('data-target');
+    var target = parseFloat(raw);
+    var decimals = raw.indexOf('.') >= 0 ? raw.split('.')[1].length : 0;
+    var duration = 3500;
+    var startTime = null;
+
+    function step(timestamp) {
+      if (!startTime) startTime = timestamp;
+      var progress = Math.min((timestamp - startTime) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 4);
+      var value = eased * target;
+      value = decimals ? value.toFixed(decimals) : Math.floor(value);
+      el.textContent = value >= 1000 ? Number(value).toLocaleString() : value;
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          animateCount(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    counts.forEach(function (el) { observer.observe(el); });
+  } else {
+    counts.forEach(animateCount);
+  }
+}());
+</script>
+
+</body>
+</html>
