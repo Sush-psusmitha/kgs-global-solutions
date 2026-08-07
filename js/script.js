@@ -354,7 +354,46 @@ if (insightsSection) {
     /* shared between both pages */
     '.cs-section', '.stt-section',
     /* about.html */
-    '.abt-intro-section'
+    '.abt-intro-section',
+    /* locations.html */
+    '.loc-section', '.infra-section', '.adv-section',
+    /* insights.html */
+    '.blg-section', '.bcat-section',
+    /* certifications.html */
+    '.cert-detail', '.clients-section',
+    /* certifications.html + customers.html (shared kgs-adv section) */
+    '.kgs-adv',
+    /* case-studies.html */
+    '.cs-projects',
+    /* case-studies pages — shared case-study template (13 files) */
+    '.csabt-section', '.csstat-section', '.csbody-section', '.cstech-section',
+    /* corporate-social-responsibility.html */
+    '.csr-section', '.lcs-result',
+    /* contact.html — .cus-section already has its own page-level
+       IntersectionObserver wiring is-visible (see inline script at
+       bottom of contact.html); this entry is redundant-but-harmless
+       and kept for discoverability/consistency with the rest of the
+       site's sections. */
+    '.cus-section',
+    /* customers.html */
+    '.cust-clients',
+    /* careers.html */
+    '.job-positions',
+    /* privacy-policy.html, terms-and-conditions.html */
+    '.lgl-body',
+    /* management-team.html — .mgt-section already has its own
+       page-level IntersectionObserver wiring is-visible (see inline
+       script at bottom of management-team.html); kept here too for
+       the same reason as .cus-section above. */
+    '.mgt-section',
+    /* news-and-events.html */
+    '.nev-slider', '.nev-news',
+    /* sitemap.html */
+    '.sitemap-section',
+    /* testimonials.html */
+    '.tsm-section',
+    /* insights article pages — shared template (8 files) */
+    '.art-body', '.art-similar'
   ].forEach(function (selector) {
     revealOnScroll(selector, 'is-visible', 0.12);
   });
@@ -964,45 +1003,6 @@ if (insightsSection) {
 
   els.forEach(function (el) { observer.observe(el); });
 }());
-
-/* =============================================
-   INDUSTRY PAGE SERVICES — center-mode peek Slick carousel
-   ============================================= */
-(function (jQ) {
-  if (!jQ || !jQ.fn || !jQ.fn.slick) return;
-
-  var section = document.querySelector('.indpg-services-section');
-  if (!section) return;
-
-  var $slider = jQ('#indpgServicesSlider');
-  if (!$slider.length) return;
-
-  $slider.slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 3200,
-    speed: 600,
-    arrows: false,
-    dots: false,
-    swipe: true,
-    pauseOnHover: true,
-    touchThreshold: 10,
-    centerMode: true,
-    centerPadding: '60px',
-    responsive: [
-      { breakpoint: 1100, settings: { slidesToShow: 2, centerPadding: '50px' } },
-      { breakpoint: 700, settings: { slidesToShow: 1, centerPadding: '40px' } },
-      { breakpoint: 420, settings: { slidesToShow: 1, centerPadding: '20px' } }
-    ]
-  });
-
-  var prevBtn = document.getElementById('indpgServicesPrev');
-  var nextBtn = document.getElementById('indpgServicesNext');
-  if (prevBtn) prevBtn.addEventListener('click', function () { $slider.slick('slickPrev'); });
-  if (nextBtn) nextBtn.addEventListener('click', function () { $slider.slick('slickNext'); });
-}(window.jQuery));
 
 /* =============================================
    INDUSTRY PAGE AI CAPABILITIES — hover-switched tab panel.
