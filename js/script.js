@@ -393,7 +393,9 @@ if (insightsSection) {
     /* testimonials.html */
     '.tsm-section',
     /* insights article pages — shared template (8 files) */
-    '.art-body', '.art-similar'
+    '.art-body', '.art-similar',
+    /* product/mapmyclasses.html */
+    '.pdi-section', '.pui-section', '.pbn-section', '.ppl-section', '.pwc-section'
   ].forEach(function (selector) {
     revealOnScroll(selector, 'is-visible', 0.12);
   });
@@ -974,16 +976,26 @@ if (insightsSection) {
     var duration = 3000;
     var startTime = null;
 
+    /* Renders as <span class="stat-sign">prefix</span><span class="stat-num">N</span><span class="stat-sign">suffix</span>
+       instead of plain text, so CSS can color the digits separately from
+       the surrounding symbols (e.g. "$" / "+" / "%") where needed. */
+    function render(numText) {
+      el.innerHTML =
+        (prefix ? '<span class="stat-sign">' + prefix + '</span>' : '') +
+        '<span class="stat-num">' + numText + '</span>' +
+        (suffix ? '<span class="stat-sign">' + suffix + '</span>' : '');
+    }
+
     function step(timestamp) {
       if (!startTime) startTime = timestamp;
       var progress = Math.min((timestamp - startTime) / duration, 1);
       var eased = 1 - Math.pow(1 - progress, 3); /* ease-out cubic */
       var current = target * eased;
-      el.textContent = prefix + current.toFixed(decimals) + suffix;
+      render(current.toFixed(decimals));
       if (progress < 1) {
         requestAnimationFrame(step);
       } else {
-        el.textContent = prefix + rawNumber + suffix;
+        render(rawNumber);
       }
     }
 
@@ -1034,6 +1046,61 @@ if (insightsSection) {
 }());
 
 /* =============================================
+   PRODUCT BENEFITS — ERP / LMS engine tabs
+   (product/mapmyclasses.html). Click-only (no hover switch,
+   unlike the role tabs above) since these sit above a full
+   card grid rather than a single small panel.
+   ============================================= */
+(function () {
+  var tabs = document.querySelectorAll('.pbn-tab');
+  if (!tabs.length) return;
+
+  var panels = document.querySelectorAll('.pbn-panel');
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      var target = tab.getAttribute('data-tab');
+
+      tabs.forEach(function (t) {
+        var active = t === tab;
+        t.classList.toggle('is-active', active);
+        t.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      panels.forEach(function (panel) {
+        panel.classList.toggle('is-active', panel.getAttribute('data-panel') === target);
+      });
+    });
+  });
+}());
+
+/* =============================================
+   PRODUCT PLATFORMS — role transformation tabs
+   (product/mapmyclasses.html). Same click-only pattern as the
+   ERP/LMS tabs above.
+   ============================================= */
+(function () {
+  var tabs = document.querySelectorAll('.ppl-tab');
+  if (!tabs.length) return;
+
+  var panels = document.querySelectorAll('.ppl-panel');
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      var target = tab.getAttribute('data-tab');
+
+      tabs.forEach(function (t) {
+        var active = t === tab;
+        t.classList.toggle('is-active', active);
+        t.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      panels.forEach(function (panel) {
+        panel.classList.toggle('is-active', panel.getAttribute('data-panel') === target);
+      });
+    });
+  });
+}());
+
+/* =============================================
    HEADER + CARD STAGGER — runs alongside the section-level
    revealOnScroll() above: header fades in first, then each card
    in sequence. Deliberately skips cards inside a Slick carousel
@@ -1053,7 +1120,7 @@ if (insightsSection) {
   var cardSelector = [
     '.stats-item', '.sb-card', '.ai-card', '.nwi-item', '.tech-card',
     '.svcfaq-item', '.svcblog-card', '.indpg-stats-card', '.abt-intro-item',
-    '.abt-mission-item', '.wcu2-item'
+    '.abt-mission-item', '.wcu2-item', '.pbn-card', '.pwc-card'
   ].join(', ');
 
   var sections = document.querySelectorAll('section');

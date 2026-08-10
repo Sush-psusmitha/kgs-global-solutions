@@ -2210,6 +2210,7 @@ svg {
 .marquee-wrapper {
   overflow: hidden;
   width: 100%;
+  background-color: white;
 }
 
 .marquee-track {
@@ -9698,8 +9699,14 @@ h6 {
   position: relative;
   border-radius: 15px;
   overflow: hidden;
-  aspect-ratio: 586 / 510;
+  aspect-ratio: 500 / 350;
   box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15);
+}
+
+@media(min-width:1600px) {
+  .arch-media {
+    aspect-ratio: 500 / 300;
+  }
 }
 
 .arch-media-img {
@@ -10617,7 +10624,7 @@ a.breadcrumb-link:hover {
   font-size: 1rem;
   line-height: 1.75;
   color: var(--kgs-text);
-  margin: 0 0 32px;
+  margin: 0x 0 32px;
   font-weight: 500;
 }
 
@@ -10784,7 +10791,7 @@ a.breadcrumb-link:hover {
    TECH CAPABILITIES GRID — reusable "X solutions we deliver" card grid
    ============================================================ */
 .tech-section {
-  background: #F4F4F4;
+  background: white;
   padding: 60px 0 60px;
 }
 
@@ -10814,6 +10821,10 @@ a.breadcrumb-link:hover {
   max-width: 100%;
 }
 
+.tech-heading-accent {
+  color: var(--kgs-primary);
+}
+
 .tech-desc {
   font-family: var(--font-body);
   font-size: 1rem;
@@ -10821,7 +10832,7 @@ a.breadcrumb-link:hover {
   font-weight: 500;
   color: var(--kgs-text);
   text-align: center;
-  max-width: 100%;
+  max-width: 75%;
   margin: 0 auto 50px;
 }
 
@@ -10833,7 +10844,7 @@ a.breadcrumb-link:hover {
 
 .tech-card {
   position: relative;
-  background: #FFFFFF;
+  background: #F4F4F4;
   border: 1px solid rgba(60, 60, 58, 0.12);
   border-radius: 5px;
   overflow: hidden;
@@ -10986,8 +10997,8 @@ a.breadcrumb-link:hover {
   font-size: 1rem;
   line-height: 1.7;
   color: var(--kgs-text);
-  opacity: 0.65;
-  max-width: 100%;
+  f opacity: 0.65;
+  max-width: 75%;
   margin: 0 auto 58px;
 }
 
@@ -12498,8 +12509,9 @@ a.breadcrumb-link:hover {
 .indpg-ai-panel-item {
   display: none;
   background: white;
-  padding: 48px;
+  padding: 20px;
   gap: 40px;
+  border-radius: 10px;
   align-items: center;
 }
 
@@ -12661,7 +12673,9 @@ a.breadcrumb-link:hover {
 .svcfaq-item,
 .indpg-stats-card,
 .abt-intro-title,
-.abt-intro-item {
+.abt-intro-item,
+.pbn-card,
+.pwc-card {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -12692,7 +12706,9 @@ a.breadcrumb-link:hover {
 .svcfaq-item.is-visible,
 .indpg-stats-card.is-visible,
 .abt-intro-title.is-visible,
-.abt-intro-item.is-visible {
+.abt-intro-item.is-visible,
+.pbn-card.is-visible,
+.pwc-card.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -13592,7 +13608,7 @@ a.breadcrumb-link:hover {
   }
 
 
-   .wcc-checklist li,
+  .wcc-checklist li,
   .lcs-result-card-title,
   .abt-card-desc,
   .vsm-card-desc,
@@ -13607,7 +13623,8 @@ a.breadcrumb-link:hover {
 
   .svcfaq-cta-title,
 
-  .svcblog-card-title {
+  .svcblog-card-title,
+  .pbn-card-title {
     font-size: 19px;
   }
 
@@ -13639,7 +13656,10 @@ a.breadcrumb-link:hover {
 
   .indpg-ai-panel-desc,
   .indpg-services-card-desc,
-  .art-content>p {
+  .art-content>p,
+  .pdi-desc,
+  .tech-desc,
+  .pbn-desc {
     font-size: 17px;
   }
 
@@ -13763,5 +13783,1043 @@ a.breadcrumb-link:hover {
 
   .blg-latest-item {
     padding: 30px 0px;
+  }
+}
+
+/* ============================================================
+   PRODUCT INTRO — product/mapmyclasses.html
+   ============================================================ */
+.pdi-section {
+  background: linear-gradient(180deg, #FDEEF0, #F4F4F4);
+  padding: 20px 0 80px;
+  overflow: hidden;
+}
+
+.pdi-row {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 64px;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.pdi-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  color: var(--kgs-text);
+  line-height: 1.15;
+  margin: 0 0 24px;
+}
+
+.pdi-desc {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--kgs-text);
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+
+.pdi-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 28px 0 40px;
+}
+
+.pdi-compliance-label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--kgs-text);
+  margin-bottom: 14px;
+}
+
+.pdi-badges {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(60, 60, 58, 0.08);
+  border-radius: 12px;
+  padding: 16px 22px;
+  width: fit-content;
+}
+
+.pdi-badge {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.pdi-badge:nth-child(1) {
+  transition-delay: 0.5s;
+}
+
+.pdi-badge:nth-child(2) {
+  transition-delay: 0.6s;
+}
+
+.pdi-badge:nth-child(3) {
+  transition-delay: 0.7s;
+}
+
+.pdi-badge:nth-child(4) {
+  transition-delay: 0.8s;
+}
+
+.pdi-section.is-visible .pdi-badge {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pdi-media {
+  position: relative;
+}
+
+.pdi-media-img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+}
+
+/* ── Stats row ── */
+.pdi-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid rgba(60, 60, 58, 0.1);
+  padding-top: 40px;
+}
+
+.pdi-stat {
+  position: relative;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.pdi-stat:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 1px;
+  background: rgba(60, 60, 58, 0.12);
+}
+
+.pdi-stat-value {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--kgs-primary);
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+/* Digits in black, surrounding symbols ($, +, %, etc.) stay in the
+   primary color inherited from .pdi-stat-value above. */
+.pdi-stat-value .stat-num {
+  color: var(--kgs-text);
+}
+
+.pdi-stat-label {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--kgs-text-soft);
+}
+
+/* ── Scroll reveal (same pattern used site-wide) ── */
+.pdi-inner {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.pdi-section.is-visible .pdi-inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pdi-inner {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .pdi-badge {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 991px) {
+  .pdi-row {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .pdi-stats {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
+  }
+
+  .pdi-stat:nth-child(3)::before {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .pdi-section {
+    padding: 56px 0;
+  }
+
+  .pdi-title {
+    font-size: clamp(1.8rem, 7vw, 2.2rem);
+  }
+
+  .pdi-badges {
+    gap: 14px;
+    padding: 14px 16px;
+  }
+
+  .pdi-badge {
+    height: 32px;
+  }
+
+  .pdi-stat-value {
+    font-size: 1.6rem;
+  }
+}
+
+/* ============================================================
+   UI PREVIEW — product/mapmyclasses.html
+   Role tabs switch the panel below on hover (JS: reuses the
+   .indpg-ai-tab / .indpg-ai-panel-item hover-switch logic in
+   script.js as a behavior hook — see the dual class on each
+   element in the HTML; no JS changes needed).
+   ============================================================ */
+.pui-section {
+  background: #F4F4F4;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.pui-row {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.pui-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  color: var(--kgs-text);
+  line-height: 1.2;
+  margin: 0 0 16px;
+}
+
+.pui-desc {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--kgs-text);
+  font-weight: 500;
+  margin: 0 0 22px;
+  max-width: 46ch;
+}
+
+/* ── Role tabs ── */
+.pui-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+  background: #FFFFFF;
+  width: fit-content;
+  padding: 6px;
+  border-radius: 34px;
+  box-shadow: 0 8px 24px rgba(22, 21, 29, 0.06);
+}
+
+.pui-tab {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--kgs-text);
+  background: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 9px 20px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pui-tab.is-active {
+  background: var(--kgs-primary);
+  color: #FFFFFF;
+  box-shadow: 0 6px 16px rgba(248, 72, 94, 0.35);
+}
+
+/* ── Panel (swapped on tab hover) ── */
+.pui-panel {
+  background: #FFFFFF;
+  border: 1px solid rgba(60, 60, 58, 0.06);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 80%;
+}
+
+.pui-panel-item {
+  display: none;
+}
+
+.pui-panel-item.is-active {
+  display: block;
+}
+
+.pui-panel-name {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--kgs-primary);
+  margin: 0 0 4px;
+}
+
+.pui-panel-role {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--kgs-text);
+  margin: 0 0 12px;
+}
+
+.pui-panel-desc {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--kgs-text-soft);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ── Browser mockup placeholder ── */
+.pui-media {
+  display: flex;
+  justify-content: center;
+}
+
+.pui-browser-mock {
+  width: 100%;
+  /* max-width: 460px; */
+  border-radius: 14px;
+  overflow: hidden;
+  background: #E9E9EC;
+}
+
+.pui-browser-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  background: #F4F4F6;
+  border-bottom: 1px solid rgba(60, 60, 58, 0.08);
+}
+
+.pui-browser-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.pui-browser-dot--red {
+  background: #FF5F57;
+}
+
+.pui-browser-dot--yellow {
+  background: #FEBC2E;
+}
+
+.pui-browser-dot--green {
+  background: #28C840;
+}
+
+.pui-browser-home {
+  color: var(--kgs-text-soft);
+  font-size: 0.8rem;
+  margin-left: 4px;
+}
+
+.pui-browser-address {
+  flex: 1;
+  height: 32px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  color: rgba(60, 60, 58, 0.35);
+  font-size: 0.75rem;
+}
+
+.pui-browser-menu {
+  color: var(--kgs-text-soft);
+  font-size: 0.85rem;
+}
+
+.pui-browser-body {
+  aspect-ratio: 16 / 11;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 6px;
+  padding: 20px;
+}
+
+.pui-browser-placeholder-label {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: rgba(248, 72, 94, 0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.pui-browser-placeholder-sub {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(60, 60, 58, 0.4);
+  margin-top: 4px;
+}
+
+/* ── Scroll reveal (same pattern used site-wide) ── */
+.pui-inner {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.pui-section.is-visible .pui-inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pui-inner {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 991px) {
+  .pui-row {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .pui-section {
+    padding: 56px 0;
+  }
+
+  .pui-title {
+    font-size: clamp(1.8rem, 7vw, 2.2rem);
+  }
+
+  .pui-tab {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+}
+
+/* =============================================
+   PRODUCT BENEFITS — ERP / LMS engine tabs
+   (product/mapmyclasses.html)
+   ============================================= */
+.pbn-section {
+  background: #FFFFFF;
+  padding: 80px 0;
+}
+
+.pbn-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 96px;
+  row-gap: 24px;
+  align-items: start;
+  margin-bottom: 32px;
+}
+
+.pbn-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  color: var(--kgs-text);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.pbn-title-accent {
+  color: var(--kgs-primary);
+}
+
+.pbn-desc {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--kgs-text);
+  font-weight: 500;
+  margin: 8px 0 0;
+  max-width: 52ch;
+}
+
+/* ── Engine tabs ── */
+.pbn-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 40px;
+  background: #F4F4F4;
+  width: fit-content;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.pbn-tab {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--kgs-text);
+  background: #FFFFFF;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 22px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pbn-tab.is-active {
+  background: var(--kgs-primary);
+  color: #FFFFFF;
+  box-shadow: 0 6px 16px rgba(248, 72, 94, 0.3);
+}
+
+/* ── Panels + card grid ── */
+.pbn-panel {
+  display: none;
+}
+
+.pbn-panel.is-active {
+  display: block;
+}
+
+.pbn-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 48px;
+  row-gap: 40px;
+}
+
+.pbn-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pbn-card-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--kgs-primary);
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.pbn-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--kgs-text);
+  margin: 0 0 10px;
+}
+
+.pbn-card-desc {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--kgs-text);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ── Scroll reveal (same pattern used site-wide) ── */
+.pbn-inner {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.pbn-section.is-visible .pbn-inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pbn-inner {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 991px) {
+  .pbn-header {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .pbn-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .pbn-section {
+    padding: 56px 0;
+  }
+
+  .pbn-title {
+    font-size: clamp(1.8rem, 7vw, 2.2rem);
+  }
+
+  .pbn-tab {
+    padding: 9px 18px;
+    font-size: 0.8rem;
+  }
+
+  .pbn-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =============================================
+   PRODUCT PLATFORMS — role transformation tabs
+   (product/mapmyclasses.html)
+   ============================================= */
+.ppl-section {
+  background: linear-gradient(180deg, #FDEFEF 0%, #F7F1F1 100%);
+  padding: 80px 0;
+}
+
+.ppl-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 96px;
+  row-gap: 24px;
+  align-items: start;
+  margin-bottom: 28px;
+}
+
+.ppl-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  color: var(--kgs-text);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.ppl-title-accent {
+  color: var(--kgs-primary);
+}
+
+.ppl-desc {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--kgs-text);
+  font-weight: 500;
+  margin: 8px 0 0;
+  max-width: 52ch;
+}
+
+/* ── Role tabs ── */
+.ppl-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 38px;
+}
+
+.ppl-tab {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--kgs-text);
+  background: #FFFFFF;
+  border: 1px solid rgba(60, 60, 58, 0.12);
+  border-radius: 30px;
+  padding: 11px 24px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ppl-tab.is-active {
+  background: var(--kgs-primary);
+  border-color: var(--kgs-primary);
+  color: #FFFFFF;
+  box-shadow: 0 6px 16px rgba(248, 72, 94, 0.3);
+}
+
+/* ── Card + panel ── */
+.ppl-card {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.ppl-panel {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.ppl-panel.is-active {
+  display: grid;
+}
+
+.ppl-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--kgs-primary);
+  background: rgba(248, 72, 94, 0.08);
+  border-radius: 20px;
+  padding: 7px 16px;
+  margin-bottom: 18px;
+}
+
+.ppl-badge i {
+  font-size: 0.5rem;
+}
+
+.ppl-panel-title {
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--kgs-text);
+  line-height: 1.25;
+  margin: 0 0 14px;
+}
+
+.ppl-panel-desc {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--kgs-text-soft);
+  font-weight: 500;
+  margin: 0 0 28px;
+  max-width: 48ch;
+}
+
+.ppl-stats {
+  display: flex;
+  gap: 14px;
+}
+
+.ppl-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid rgba(60, 60, 58, 0.12);
+  border-radius: 12px;
+  padding: 14px 16px;
+  flex: 1;
+  max-width: 30%;
+}
+
+.ppl-stat-value {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--kgs-text);
+}
+
+.ppl-stat-label {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--kgs-text);
+  font-weight: 500;
+  max-width: 70%;
+}
+
+.ppl-panel-media {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.ppl-panel-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4.5 / 3;
+}
+
+@media(min-width:1600px) {
+  .ppl-panel-media img {
+    aspect-ratio: 5 / 3;
+  }
+
+  .ppl-badge,
+  .ppl-stat-label {
+    font-size: 1rem;
+  }
+
+  .ppl-desc {
+    font-size: 18px;
+  }
+
+  .ppl-panel-desc {
+    font-size: 17px;
+  }
+}
+
+/* ── Scroll reveal (same pattern used site-wide) ── */
+.ppl-inner {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.ppl-section.is-visible .ppl-inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ppl-inner {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 991px) {
+  .ppl-header {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .ppl-panel.is-active {
+    grid-template-columns: 1fr;
+  }
+
+  .ppl-panel-media {
+    order: -1;
+  }
+
+  .ppl-panel-media img {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (max-width: 640px) {
+  .ppl-section {
+    padding: 56px 0;
+  }
+
+  .ppl-title {
+    font-size: clamp(1.8rem, 7vw, 2.2rem);
+  }
+
+  .ppl-card {
+    padding: 24px;
+  }
+
+  .ppl-panel {
+    gap: 28px;
+  }
+
+  .ppl-panel-title {
+    font-size: 1.35rem;
+  }
+
+  .ppl-stats {
+    flex-direction: column;
+  }
+}
+
+/* =============================================
+   PRODUCT WHY CHOOSE US — dark trust stats
+   (product/mapmyclasses.html)
+   ============================================= */
+.pwc-section {
+  position: relative;
+  background: #000000;
+  padding: 90px 0;
+  overflow: hidden;
+}
+
+.pwc-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right bottom;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pwc-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.pwc-header {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  column-gap: 60px;
+  row-gap: 16px;
+  align-items: start;
+  margin-bottom: 48px;
+}
+
+.pwc-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.pwc-desc {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #B7B7BD;
+  font-weight: 500;
+  margin: 10px 0 0;
+
+}
+
+.pwc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.pwc-card {
+  background: #111111;
+  border: 1px solid #1A1A1A;
+  border-radius: 14px;
+  padding: 28px 26px;
+  transition: border-color 0.25s ease;
+}
+
+.pwc-card:hover {
+  border-color: #454545;
+}
+
+.pwc-card-value {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0 0 12px;
+}
+
+.pwc-card-desc {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: #C3C3C3;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ── Scroll reveal (same pattern used site-wide) ── */
+.pwc-inner {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.pwc-section.is-visible .pwc-inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pwc-inner {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 991px) {
+  .pwc-header {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .pwc-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .pwc-section {
+    padding: 56px 0;
+  }
+
+  .pwc-title {
+    font-size: clamp(1.8rem, 7vw, 2.2rem);
+  }
+
+  .pwc-grid {
+    grid-template-columns: 1fr;
   }
 }
