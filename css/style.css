@@ -166,7 +166,7 @@ body {
    edge outward — landing in the newly opened space instead of the text. */
 .btn-arrow::after {
   content: '\f061';
-  font-family: 'Font Awesome 6 Free';
+  font-family: 'Font Awesome 7 Free';
   font-weight: 900;
   font-size: 1.15em;
   position: absolute;
