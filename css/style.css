@@ -10880,6 +10880,13 @@ a.breadcrumb-link:hover {
   transition: filter var(--transition);
 }
 
+@media(min-width:1600px) {
+  .tech-card-icon img {
+    width: 58px;
+    height: 58px;
+  }
+}
+
 /* Icon box + icon flip to a dark badge with a white glyph on hover —
    source icons are solid black on transparent, so inverting them
    renders white with no separate asset needed. */
@@ -13576,215 +13583,6 @@ a.breadcrumb-link:hover {
 
 
 
-/* media font above 1600px */
-@media(min-width:1600px) {
-
-  .ind-svc-lead,
-  .ind-intro-body p,
-  .faq-q,
-  .svc-ov-desc,
-  .svc-services-desc,
-  .svc-card-desc,
-  .ts-header p,
-  .wcu-card-desc,
-  .csd-header p,
-  .abt-desc,
-  .vsm-card-title,
-  .wpu-card-desc,
-  .blg-intro,
-  .cs-card-desc,
-  .cth-desc,
-  .tsm-hero-desc,
-  .lcs-result-card-desc,
-  .csr-card-desc,
-  .mgt-row1-desc,
-  .mgt-ceo-desc,
-  .nev-hero-desc,
-
-  .indpg-services-card-title,
-  .wcu-card-title,
-  .fs-card-title {
-    font-size: 21px;
-  }
-
-
-  .wcc-checklist li,
-  .lcs-result-card-title,
-  .abt-card-desc,
-  .vsm-card-desc,
-  .kgs-adv-list li,
-  .cus-office-line,
-  .mgt-card-back-desc,
-  .lcs-info-col-body,
-  .otg-desc,
-  .lcs-list-item {
-    font-size: 20px;
-  }
-
-  .svcfaq-cta-title,
-
-  .svcblog-card-title,
-  .pbn-card-title {
-    font-size: 19px;
-  }
-
-  .ind-chip,
-  .qte-desc,
-  .ts-card-items li,
-  .cs-pill,
-  .cus-office-addr,
-  .otg-card-desc,
-  .rtd-pill,
-  .svcfaq-question,
-  .mega-col-title,
-  .indpg-services-tag {
-    font-size: 18px;
-  }
-
-  .ai-services-subtitle,
-  .arch-desc,
-  .ind-text-desc,
-
-  .svc-intro-desc,
-  .tech-desc,
-  .plat-desc,
-  .why-card-title,
-  .svcfaq-answer p,
-  .svcblog-card-desc,
-  .svcform-desc,
-  .indpg-intro-desc,
-
-  .indpg-ai-panel-desc,
-  .indpg-services-card-desc,
-  .art-content>p,
-  .pdi-desc,
-  .tech-desc,
-  .pbn-desc {
-    font-size: 17px;
-  }
-
-  .company-promo-desc,
-  .mega-col-desc,
-  .tech-card-desc,
-  .indpg-services-tag {
-    font-size: 15px;
-  }
-
-  .grid-item-sub,
-  .svcblog-tag,
-  .footer-copy,
-  .svcform-card .cus-field label {
-    font-size: 14px;
-  }
-
-  .mega-bottom-contact-item,
-  .company-dropdown-desc,
-
-  .mega-bottom-cta,
-  .svcfaq-desc,
-  .svcfaq-cta-desc,
-  .mega-col-list a,
-  .ind-card-desc,
-  .ai-card-desc,
-  .jny-tag,
-  .stats-desc,
-  .blg-latest-cat,
-  .why-card-desc,
-  .svcform-card-intro,
-  .indpg-ai-panel-list li {
-    font-size: 1rem;
-  }
-
-  .ind-svc-header {
-    max-width: 70%;
-  }
-
-  .rtd-desc,
-  .ind-svc-card-desc,
-  .tm-text,
-  .jny-card-desc,
-  .mnf-item p,
-  .job-card-desc,
-  .tsm-card-desc {
-    font-size: 20px;
-
-  }
-
-
-  .hww-detail-desc,
-  .faq-a p,
-  .jny-desc {
-    font-size: 20px;
-  }
-
-  .wpu-card-title,
-  .bcat-card-title,
-  .cert-row-list li,
-  .nev-card-desc,
-  .otg-card-title,
-  .svc-card-title {
-    font-size: 24px;
-  }
-
-  .csd-card-desc,
-  .abt-card-title,
-  .job-meta-item,
-  .cth-card-title {
-    font-size: 1.250rem;
-  }
-
-  .cert-check-icon,
-  .wcc-check-icon {
-    width: 25px;
-    height: 25px;
-  }
-
-  .bcat-intro {
-    font-size: 20px;
-  }
-
-  .blg-feat-caption,
-  .bcat-pill,
-  .bcat-card-desc,
-  .lcs-testi-text {
-    font-size: 20px;
-  }
-
-  .cth-card-desc,
-  .tech-card-title {
-    font-size: 1.2rem;
-  }
-
-  .cus-field label,
-  .cus-field textarea,
-  .tsm-card-role {
-    font-size: 1rem;
-  }
-
-  .logo-img {
-    height: 38px;
-  }
-
-  .footer-logo img {
-    height: 38px;
-  }
-
-  .di-title {
-    font-size: 1.2rem;
-  }
-
-  .di-sub {
-    font-size: 18px;
-  }
-
-  .blg-latest-title {
-    font-size: 25px;
-  }
-
-  .blg-latest-item {
-    padding: 30px 0px;
-  }
-}
 
 /* ============================================================
    PRODUCT INTRO — product/mapmyclasses.html
@@ -13917,7 +13715,7 @@ a.breadcrumb-link:hover {
 .pdi-stat-value {
   display: block;
   font-family: var(--font-heading);
-  font-size: 2.2rem;
+  font-size: 4rem;
   font-weight: 700;
   color: var(--kgs-primary);
   line-height: 1.1;
@@ -13932,9 +13730,9 @@ a.breadcrumb-link:hover {
 
 .pdi-stat-label {
   font-family: var(--font-body);
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
-  color: var(--kgs-text-soft);
+  color: var(--kgs-text);
 }
 
 /* ── Scroll reveal (same pattern used site-wide) ── */
@@ -14052,12 +13850,12 @@ a.breadcrumb-link:hover {
   width: fit-content;
   padding: 6px;
   border-radius: 34px;
-  box-shadow: 0 8px 24px rgba(22, 21, 29, 0.06);
+  /* max-width: 80%; */
 }
 
 .pui-tab {
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--kgs-text);
   background: transparent;
@@ -14079,7 +13877,7 @@ a.breadcrumb-link:hover {
   background: #FFFFFF;
   border: 1px solid rgba(60, 60, 58, 0.06);
   border-radius: 15px;
-  width: 100%;
+  width: fit-content;
   max-width: 80%;
 }
 
@@ -14348,10 +14146,18 @@ a.breadcrumb-link:hover {
   align-items: flex-start;
 }
 
+.pbn-card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
 .pbn-card-num {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   width: 30px;
   height: 30px;
   border-radius: 8px;
@@ -14360,7 +14166,6 @@ a.breadcrumb-link:hover {
   font-family: var(--font-heading);
   font-size: 0.78rem;
   font-weight: 700;
-  margin-bottom: 16px;
 }
 
 .pbn-card-title {
@@ -14368,7 +14173,7 @@ a.breadcrumb-link:hover {
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--kgs-text);
-  margin: 0 0 10px;
+  margin: 0;
 }
 
 .pbn-card-desc {
@@ -14378,6 +14183,8 @@ a.breadcrumb-link:hover {
   color: var(--kgs-text);
   font-weight: 500;
   margin: 0;
+  /* Aligns with .pbn-card-title, not the number badge: badge width (30px) + .pbn-card-head gap (12px) */
+  margin-left: 42px;
 }
 
 /* ── Scroll reveal (same pattern used site-wide) ── */
@@ -14551,7 +14358,7 @@ a.breadcrumb-link:hover {
   font-family: var(--font-body);
   font-size: 0.92rem;
   line-height: 1.7;
-  color: var(--kgs-text-soft);
+  color: var(--kgs-text);
   font-weight: 500;
   margin: 0 0 28px;
   max-width: 48ch;
@@ -14559,18 +14366,20 @@ a.breadcrumb-link:hover {
 
 .ppl-stats {
   display: flex;
-  gap: 14px;
+  gap: 12px;
+  max-width: 70%;
 }
 
 .ppl-stat {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 4px;
   border: 1px solid rgba(60, 60, 58, 0.12);
   border-radius: 12px;
   padding: 14px 16px;
   flex: 1;
-  max-width: 30%;
+  text-align: center;
 }
 
 .ppl-stat-value {
@@ -14586,7 +14395,7 @@ a.breadcrumb-link:hover {
   line-height: 1.4;
   color: var(--kgs-text);
   font-weight: 500;
-  max-width: 70%;
+  max-width: 90%;
 }
 
 .ppl-panel-media {
@@ -14684,6 +14493,7 @@ a.breadcrumb-link:hover {
 
   .ppl-stats {
     flex-direction: column;
+    max-width: 100%;
   }
 }
 
@@ -14821,5 +14631,216 @@ a.breadcrumb-link:hover {
 
   .pwc-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+
+/* media font above 1600px */
+@media(min-width:1600px) {
+
+  .ind-svc-lead,
+  .ind-intro-body p,
+  .faq-q,
+  .svc-ov-desc,
+  .svc-services-desc,
+  .svc-card-desc,
+  .ts-header p,
+  .wcu-card-desc,
+  .csd-header p,
+  .abt-desc,
+  .vsm-card-title,
+  .wpu-card-desc,
+  .blg-intro,
+  .cs-card-desc,
+  .cth-desc,
+  .tsm-hero-desc,
+  .lcs-result-card-desc,
+  .csr-card-desc,
+  .mgt-row1-desc,
+  .mgt-ceo-desc,
+  .nev-hero-desc,
+
+  .indpg-services-card-title,
+  .wcu-card-title,
+  .fs-card-title {
+    font-size: 21px;
+  }
+
+
+  .wcc-checklist li,
+  .lcs-result-card-title,
+  .abt-card-desc,
+  .vsm-card-desc,
+  .kgs-adv-list li,
+  .cus-office-line,
+  .mgt-card-back-desc,
+  .lcs-info-col-body,
+  .otg-desc,
+  .lcs-list-item {
+    font-size: 20px;
+  }
+
+  .svcfaq-cta-title,
+
+  .svcblog-card-title,
+  .pbn-card-title {
+    font-size: 19px;
+  }
+
+  .ind-chip,
+  .qte-desc,
+  .ts-card-items li,
+  .cs-pill,
+  .cus-office-addr,
+  .otg-card-desc,
+  .rtd-pill,
+  .svcfaq-question,
+  .mega-col-title,
+  .indpg-services-tag {
+    font-size: 18px;
+  }
+
+  .ai-services-subtitle,
+  .arch-desc,
+  .ind-text-desc,
+
+  .svc-intro-desc,
+  .tech-desc,
+  .plat-desc,
+  .why-card-title,
+  .svcfaq-answer p,
+  .svcblog-card-desc,
+  .svcform-desc,
+  .indpg-intro-desc,
+
+  .indpg-ai-panel-desc,
+  .indpg-services-card-desc,
+  .art-content>p,
+  .pdi-desc,
+  .tech-desc,
+  .pbn-desc {
+    font-size: 17px;
+  }
+
+  .company-promo-desc,
+  .mega-col-desc,
+  .tech-card-desc,
+  .indpg-services-tag {
+    font-size: 15px;
+  }
+
+  .grid-item-sub,
+  .svcblog-tag,
+  .footer-copy,
+  .svcform-card .cus-field label {
+    font-size: 14px;
+  }
+
+  .mega-bottom-contact-item,
+  .company-dropdown-desc,
+
+  .mega-bottom-cta,
+  .svcfaq-desc,
+  .svcfaq-cta-desc,
+  .mega-col-list a,
+  .ind-card-desc,
+  .ai-card-desc,
+  .jny-tag,
+  .stats-desc,
+  .blg-latest-cat,
+  .why-card-desc,
+  .svcform-card-intro,
+  .indpg-ai-panel-list li {
+    font-size: 1rem;
+  }
+
+  .ind-svc-header {
+    max-width: 70%;
+  }
+
+  .rtd-desc,
+  .ind-svc-card-desc,
+  .tm-text,
+  .jny-card-desc,
+  .mnf-item p,
+  .job-card-desc,
+  .tsm-card-desc {
+    font-size: 20px;
+
+  }
+
+
+  .hww-detail-desc,
+  .faq-a p,
+  .jny-desc {
+    font-size: 20px;
+  }
+
+  .wpu-card-title,
+  .bcat-card-title,
+  .cert-row-list li,
+  .nev-card-desc,
+  .otg-card-title,
+  .svc-card-title {
+    font-size: 24px;
+  }
+
+  .csd-card-desc,
+  .abt-card-title,
+  .job-meta-item,
+  .cth-card-title {
+    font-size: 1.250rem;
+  }
+
+  .cert-check-icon,
+  .wcc-check-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .bcat-intro {
+    font-size: 20px;
+  }
+
+  .blg-feat-caption,
+  .bcat-pill,
+  .bcat-card-desc,
+  .lcs-testi-text {
+    font-size: 20px;
+  }
+
+  .cth-card-desc,
+  .tech-card-title {
+    font-size: 1.2rem;
+  }
+
+  .cus-field label,
+  .cus-field textarea,
+  .tsm-card-role {
+    font-size: 1rem;
+  }
+
+  .logo-img {
+    height: 38px;
+  }
+
+  .footer-logo img {
+    height: 38px;
+  }
+
+  .di-title {
+    font-size: 1.2rem;
+  }
+
+  .di-sub {
+    font-size: 18px;
+  }
+
+  .blg-latest-title {
+    font-size: 25px;
+  }
+
+  .blg-latest-item {
+    padding: 30px 0px;
   }
 }

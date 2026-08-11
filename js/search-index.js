@@ -203,7 +203,7 @@ window.KGS_SEARCH_INDEX = [
   },
   {
     title: 'Logistics',
-    url: 'services/logistics-bpo.html',
+    url: 'services/logistics.html',
     category: 'Service',
     description: 'Optimize logistics operations with supply chain management, freight management, warehouse support and logistics consulting services for global enterprises.',
     heading: 'Logistics and Supply Chain Management Services That Keep Freight Moving',
@@ -275,7 +275,7 @@ window.KGS_SEARCH_INDEX = [
   },
   {
     title: 'Healthcare Services',
-    url: 'services/healthcare-bpo.html',
+    url: 'services/healthcare.html',
     category: 'Service',
     description: 'Enhance healthcare operations with healthcare outsourcing, medical data management, healthcare BPO, support services and digital healthcare solutions.',
     heading: 'Healthcare Services That Protect Revenue and Time',
@@ -283,7 +283,7 @@ window.KGS_SEARCH_INDEX = [
   },
   {
     title: 'Insurance Services',
-    url: 'services/insurance-bpo.html',
+    url: 'services/insurance.html',
     category: 'Service',
     description: 'Streamline insurance operations with insurance BPO, claims processing, policy administration, back-office support and digital transformation services.',
     heading: 'Insurance Services That Speed Claims and Policies',
