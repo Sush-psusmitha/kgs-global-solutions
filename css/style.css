@@ -10679,6 +10679,511 @@ a.breadcrumb-link:hover {
 }
 
 /* ============================================================
+   SERVICES PAGE INTRO — team photo + growth pitch
+   (services.html)
+   ============================================================ */
+.kgs-services-intro {
+  background: var(--linear-bg);
+  padding: 0px 0 0px;
+}
+
+.kgs-services-intro-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: stretch;
+}
+
+.kgs-services-intro-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.kgs-services-intro-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  color: var(--kgs-text);
+  line-height: 1.25;
+  margin: 0 0 20px;
+}
+
+.kgs-services-intro-desc {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--kgs-text);
+  font-weight: 500;
+  margin: 0 0 32px;
+}
+
+.kgs-services-intro-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.kgs-services-intro-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kgs-services-intro-img {
+  width: 100%;
+  max-width: 640px;
+  /* height: 420px; */
+  height: fit-content;
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .kgs-services-intro {
+    padding: 50px 0;
+  }
+
+  .kgs-services-intro-row {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .kgs-services-intro-img {
+    margin: 0 auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .kgs-services-intro-desc {
+    margin-bottom: 24px;
+  }
+}
+
+/* ============================================================
+   INDUSTRIES PAGE INTRO — team photo (left) + growth pitch (right)
+   (industries.html)
+   ============================================================ */
+.kgs-industries-intro {
+  background: var(--linear-bg);
+  padding: 10px 0 0px;
+}
+
+.kgs-industries-intro-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: stretch;
+}
+
+.kgs-industries-intro-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kgs-industries-intro-img {
+  width: 100%;
+  max-width: 480px;
+  /* height: 420px; */
+  height: fit-content;
+  display: block;
+}
+
+.kgs-industries-intro-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.kgs-industries-intro-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  color: var(--kgs-text);
+  line-height: 1.25;
+  margin: 0 0 20px;
+}
+
+.kgs-industries-intro-desc {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--kgs-text);
+  font-weight: 500;
+  margin: 0 0 32px;
+}
+
+.kgs-industries-intro-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+  .kgs-industries-intro {
+    padding: 20px 0 0px;
+  }
+
+  .kgs-industries-intro-row {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .kgs-industries-intro-content {
+    order: -1;
+  }
+
+  .kgs-industries-intro-img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .kgs-industries-intro-desc {
+    margin-bottom: 24px;
+  }
+}
+
+/* ============================================================
+   INDUSTRIES LIST — full expertise grid, 2-up horizontal cards
+   (industries.html)
+   ============================================================ */
+.ind-list-section {
+  background: #FFFFFF;
+  padding: 80px 0;
+}
+
+.ind-list-header {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.ind-list-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h2);
+  font-weight: 800;
+  color: var(--kgs-text);
+  line-height: 1.25;
+  margin: 0 0 14px;
+}
+
+.ind-list-desc {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: var(--kgs-text);
+  margin: 0;
+  font-weight: 500;
+}
+
+.ind-list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.ind-list-card {
+  display: flex;
+  align-items: stretch;
+  background: #FFFFFF;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(22, 21, 29, 0.06);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.ind-list-card:hover {
+  box-shadow: 0 16px 34px rgba(22, 21, 29, 0.12);
+  transform: translateY(-4px);
+}
+
+.ind-list-media {
+  flex: 0 0 40%;
+  max-width: 40%;
+  overflow: hidden;
+}
+
+.ind-list-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+  /* height: fit-content; */
+}
+
+.ind-list-card:hover .ind-list-img {
+  transform: scale(1.05);
+}
+
+.ind-list-body {
+  flex: 1;
+  padding: 28px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ind-list-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--kgs-text);
+  margin: 0 0 10px;
+}
+
+.ind-list-card-desc {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--kgs-text);
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+.ind-list-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-start;
+  padding: 11px 22px;
+  border-radius: 30px;
+  border: 1.5px solid #E2E2E5;
+  background: transparent;
+  color: var(--kgs-text);
+  font-family: var(--font-inter-tight);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.ind-list-btn i {
+  font-size: 0.78rem;
+  transition: transform 0.3s ease;
+}
+
+.ind-list-card:hover .ind-list-btn {
+  background: var(--kgs-primary);
+  border-color: var(--kgs-primary);
+  color: #FFFFFF;
+}
+
+.ind-list-card:hover .ind-list-btn i {
+  transform: translateX(3px);
+}
+
+@media (max-width: 900px) {
+  .ind-list-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ind-list-card {
+    flex-direction: column;
+  }
+
+  .ind-list-media {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (max-width: 640px) {
+  .ind-list-section {
+    padding: 56px 0;
+  }
+
+  .ind-list-header {
+    margin-bottom: 32px;
+  }
+}
+
+/* ============================================================
+   SERVICES LIST — full expertise grid, 3-up cards
+   (services.html)
+   ============================================================ */
+.svc-list-section {
+  background: white;
+  padding: 80px 0;
+}
+
+.svc-list-header {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.svc-list-title {
+  font-family: var(--font-heading);
+  font-size: var(--fs-h2);
+  font-weight: 800;
+  color: var(--kgs-text);
+  line-height: 1.25;
+  margin: 0 0 14px;
+}
+
+.svc-list-desc {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--kgs-text);
+  margin: 0;
+  font-weight: 500;
+}
+
+.svc-list-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.svc-list-card {
+  background: #FFFFFF;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(22, 21, 29, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.svc-list-card:hover {
+  box-shadow: 0 16px 34px rgba(22, 21, 29, 0.12);
+  transform: translateY(-4px);
+}
+
+.svc-list-media {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.svc-list-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.svc-list-card:hover .svc-list-img {
+  transform: scale(1.05);
+}
+
+.svc-list-body {
+  padding: 24px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.svc-list-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--kgs-text);
+  margin: 0 0 10px;
+}
+
+.svc-list-card-desc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--kgs-text);
+  font-weight: 450;
+  margin: 0 0 18px;
+}
+
+.svc-list-features {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.svc-list-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--kgs-text);
+  transition: color 0.25s ease;
+  cursor: default;
+}
+
+.svc-list-feature-icon {
+  width: 14px;
+  height: 14px;
+  color: var(--kgs-primary);
+  flex-shrink: 0;
+}
+
+.svc-list-features li:hover {
+  color: var(--kgs-primary);
+}
+
+.svc-list-features li:hover span {
+  text-decoration: underline;
+}
+
+.svc-list-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 11px 24px;
+  border-radius: 30px;
+  border: 1.5px solid #E2E2E5;
+  background: transparent;
+  color: var(--kgs-text);
+  font-family: var(--font-inter-tight);
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.svc-list-btn i {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.svc-list-card:hover .svc-list-btn {
+  background: var(--kgs-primary);
+  border-color: var(--kgs-primary);
+  color: #FFFFFF;
+}
+
+.svc-list-card:hover .svc-list-btn i {
+  transform: translateX(3px);
+}
+
+@media (max-width: 1200px) {
+  .svc-list-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .svc-list-section {
+    padding: 56px 0;
+  }
+
+  .svc-list-header {
+    margin-bottom: 32px;
+  }
+
+  .svc-list-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
    INDUSTRY PAGE INTRO + STATS — independent from .svc-intro-* (the
    services-page version). Kept as its own component even though the
    layout currently matches, so styling one doesn't drag the other
@@ -13629,7 +14134,7 @@ a.breadcrumb-link:hover {
 .pdi-compliance-label {
   display: block;
   font-family: var(--font-body);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--kgs-text);
   margin-bottom: 14px;
@@ -13715,12 +14220,13 @@ a.breadcrumb-link:hover {
 .pdi-stat-value {
   display: block;
   font-family: var(--font-heading);
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: 700;
   color: var(--kgs-primary);
   line-height: 1.1;
   margin-bottom: 6px;
 }
+
 
 /* Digits in black, surrounding symbols ($, +, %, etc.) stay in the
    primary color inherited from .pdi-stat-value above. */
@@ -13776,6 +14282,10 @@ a.breadcrumb-link:hover {
   .pdi-stat:nth-child(3)::before {
     display: none;
   }
+
+  .pdi-stat-value {
+    font-size: 3.2rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -13797,7 +14307,7 @@ a.breadcrumb-link:hover {
   }
 
   .pdi-stat-value {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 }
 
@@ -13816,7 +14326,7 @@ a.breadcrumb-link:hover {
 
 .pui-row {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
+  grid-template-columns: 1fr 1fr;
   gap: 64px;
   align-items: center;
 }
@@ -13837,7 +14347,6 @@ a.breadcrumb-link:hover {
   color: var(--kgs-text);
   font-weight: 500;
   margin: 0 0 22px;
-  max-width: 46ch;
 }
 
 /* ── Role tabs ── */
@@ -14546,7 +15055,7 @@ a.breadcrumb-link:hover {
   font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.7;
-  color: #B7B7BD;
+  color: #FFFFFF;
   font-weight: 500;
   margin: 10px 0 0;
 
@@ -14562,18 +15071,30 @@ a.breadcrumb-link:hover {
   background: #111111;
   border: 1px solid #1A1A1A;
   border-radius: 14px;
-  padding: 28px 26px;
+  padding: 48px 36px;
   transition: border-color 0.25s ease;
+}
+
+.pwc-card.purple {
+  position: relative;
+  background: radial-gradient(140% 100% at 50% 140%, rgba(248, 72, 94, 0.5) 0%, rgba(23, 2, 27, 0.95) 50%, #12010F 100%);
+  border: 1px solid rgba(248, 72, 94, 0.3);
+  box-shadow: 0 25px 50px -18px rgba(248, 72, 94, 0.55);
 }
 
 .pwc-card:hover {
   border-color: #454545;
 }
 
+.pwc-card.purple:hover {
+  border-color: rgba(248, 72, 94, 0.55);
+  box-shadow: 0 30px 60px -15px rgba(248, 72, 94, 0.65);
+}
+
 .pwc-card-value {
   display: block;
   font-family: var(--font-heading);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 800;
   color: #FFFFFF;
   margin: 0 0 12px;
@@ -14581,9 +15102,9 @@ a.breadcrumb-link:hover {
 
 .pwc-card-desc {
   font-family: var(--font-body);
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.65;
-  color: #C3C3C3;
+  color: #DDDDDD;
   font-weight: 500;
   margin: 0;
 }
